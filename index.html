@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <header>
+            <h1>Student Grade Tracker</h1>
+            <p>Manage student grades dynamically</p>
+        </header>
+
+        <!-- Form Card -->
+        <div class="card form-card">
+
+            <h2>Add Student</h2>
+
+            <div class="form-container">
+                <input type="text" id="studentName" placeholder="Student Name">
+
+                <input type="number" id="studentGrade" placeholder="Grade">
+
+                <button id="addStudentBtn">
+                    Add Student
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Average Card -->
+        <div class="card stats-card">
+            <h2 id="averageGrade">Average Grade: 0</h2>
+        </div>
+
+        <!-- Table Card -->
+        <div class="card table-card">
+
+            <h2>Student List</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Grade</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentList"></tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
